@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<?php
+include "connexion_base.php";
+?>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>TaCitation - Validation du post</title>
+  </head> 
+  <body>
+    <h1>TaCitation</h1>
+
+
+
+
+    <h3>Bienvenu !</h3>
+
+    <?php
+if (isset($_GET['pseudonyme']) && isset($_GET['motdepasse']) && isset($_GET[login]))
+
+$sql = "INSERT INTO membre (id, login, pseudonyme, motdepasse, date) 
+VALUES (NULL, ?   , ?,  ?,NOW());";
+
+$reponse=$pdo->prepare($sql);
+$reponse->execute(array(  $_GET['login'],    $_GET['pseudonyme'])));
+
+
+
+
+
+?>
+    
+    Votre pseudonyme : <?php echo $_GET['pseudonyme']; ?>
+    <br />
+    Votre login :  <?php echo $_GET['login']; ?>
+    <br />
+
+    <p>Vous êtes bien inscrit !</p>
+
+
+    <?php
+}
+else
+{
+?>
+    <p>Il y a eu un problème technique</p>
+
+    <?php
+}
+?> 
+
+
+    <a href="index.php">Retour à la page d'accueil.</a>
+  </body>
+
+
+
+</html>

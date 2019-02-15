@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+  <head>
+    <meta charset="utf-8" />
+    <title>TaCitation - Poster </title>
+  </head> 
+
+
+
+  <body>
+    <h1>TaCitation</h1>
+
+
+
+
+    <h3>Postez votre citation</h3>
+
+    <form action="sauverpost.php" method="get">
+
+      Votre citation : 
+      <textarea name="citation"></textarea>
+      <br/>
+      
+      Son époque :
+      <select name="epoque" />
+        <option value="Antiquité">Antiquité</option>
+        <option value="Moyen-Âge">Moyen-Âge</option>
+        <option value="Renaissance">Renaissance</option>
+        <option value="Temps Modernes">Temps Modernes</option>
+        <option value="XIXe siècle">XIXe siècle</option>
+        <option value="XXe siècle">XXe siècle</option>
+        <option value="De nos jours">De nos jours</option>
+      </select>
+      <br/>
+      Son auteur : 
+      <textarea name="auteur"></textarea>
+      <br/>
+      L'oeuvre d'origine : 
+      <textarea name="oeuvreoriginale"></textarea>
+      <br/>
+      <input type="submit" value="Poster !" />
+
+    </form>
+
+  </body>
+
+
+
+</html>

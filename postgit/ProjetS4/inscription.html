@@ -1,0 +1,39 @@
+<?php
+include "connexion_base.php";
+?>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>TaCitation - Validation du post</title>
+  </head> 
+  
+  </body>
+  <h1> Inscription </h1>
+  <form action="cible.php" method="post">
+    <fieldset>
+      <fieldset>
+      <label for="login">Login:</login>
+      <input type="text" name="login" id="login" />
+      <br />
+      <label for="pseudonyme">Pseudonyme:</label>
+      <input type="text" name="pseudonyme" id="pseudonyme">
+    </fieldset>
+    <fieldset>
+    <label for="motdepasse">Mot de passe:</motdepasse>
+    <input type="text" name="motdepasse" id="motdepasse" />
+    <br />
+    <label for="verifmotdepasse">Vérification:</label>
+      <input type="text" name="verifmotdepasse" id="verifmotdepasse">
+    </fieldset>
+    <input type="submit" value="Soumettre" />
+    </fieldset>
+  </form>
+
+<br />
+<a href="index.php">Retour à la page d'accueil.</a>
+</body>
+
+
+
+</html>
